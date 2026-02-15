@@ -12,6 +12,7 @@ sudo pacman -Sy hyprland \
                 qt6-wayland \ 
                 qt5-wayland \
                 xdg-desktop-portal-hyprland \
+                nvim \
                 sddm \
 
 sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"

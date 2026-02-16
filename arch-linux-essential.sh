@@ -35,12 +35,7 @@ echo "----------------------------"
 echo "Installing Fonts for Waybar Now"
 echo "----------------------------"
 
-sudo pacman -Sy ttf-hack-nerd \
-				ttf-getbrains-mono \
-				ttf-ubuntu-font-family \
-				ttf-font-awesome \
-				ttf-jet-brains-mono-nerd \
-				ttf-font-awesome
+sudo pacman -S --noconfirm ttf-jetbrains-mono-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd
 echo "Done"
 # Install yay and some necessay yay
 # cd /tmp

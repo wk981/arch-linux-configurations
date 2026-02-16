@@ -44,6 +44,22 @@ echo "Post Docker Installation"
 echo "----------------------------"
 sudo usermod -aG docker $USER
 
+
+# UFW Minimal Config
+echo "----------------------------"
+echo "Post UFW Installation"
+echo "----------------------------"
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
+
+# Copy configs from current directory
+
+echo "----------------------------"
+echo "Post Pacman Installation"
+echo "----------------------------"
+sudo cp -r ./configs/* ~/.config/
+
 # Ohmybash
 echo "----------------------------"
 echo "Installing OhMyBash Now"

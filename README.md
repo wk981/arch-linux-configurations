@@ -45,5 +45,5 @@ Command
 
 ```bash
 
-
+sudo cp -r ./configs/ ~/config/ 
 ```

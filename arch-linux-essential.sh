@@ -21,7 +21,7 @@ sudo pacman -Sy wayland \
                 sddm \
                 pamixer \
                 nm-connection-editor \
-		docker \
+				docker \
                 ufw
 
 # Install yay and some necessay yay

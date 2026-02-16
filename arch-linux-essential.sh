@@ -27,7 +27,8 @@ sudo pacman -Sy wayland \
 				pipewire-pulse \
 				pipewire-alsa \
 				pipewire-jack \
-				alsa-utils
+				alsa-utils \
+				firefox
 echo "Done"
 
 echo "----------------------------"

@@ -23,11 +23,6 @@ sudo pacman -Sy wayland \
                 nm-connection-editor \
 				docker \
                 ufw \
-				pipewire \
-				pipewire-pulse \
-				pipewire-alsa \
-				pipewire-jack \
-				alsa-utils \
 				firefox
 echo "Done"
 
@@ -37,11 +32,6 @@ echo "----------------------------"
 
 sudo pacman -S --noconfirm ttf-jetbrains-mono-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd
 echo "Done"
-# Install yay and some necessay yay
-# cd /tmp
-
-# sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-# yay -S neohtop
 
 # Enable some packages
 echo "----------------------------"
@@ -50,14 +40,11 @@ echo "----------------------------"
 sudo systemctl enable docker
 sudo systemctl enable sddm
 sudo systemctl enable ufw
-# sudo systemctl enable pipewire.service pipewire-pulse.service
 echo "Done"
 
-# echo "----------------------------"
-# echo "Post Audio Installation"
-# echo "----------------------------"
-# amixer sset Master unmute
-# echo "Done"
+echo "----------------------------"
+echo "Note: Please set up audio by yourself. This was tested in VM and not on a proper PC"
+echo "----------------------------"
 
 # Docker post installation
 echo "----------------------------"
@@ -79,12 +66,11 @@ sudo ufw enable
 echo "Done"
 
 # Copy configs from current directory
-
 echo "----------------------------"
 echo "Post Pacman Installation, copying .configs over"
 echo "----------------------------"
-sudo mkdir ~/.config
-sudo cp -r ./configs/* ~/.config/
+mkdir -p ~/.config
+cp -r ./configs/* ~/.config/
 echo "Done"
 
 # Ohmybash

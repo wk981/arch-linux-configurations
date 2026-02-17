@@ -50,14 +50,14 @@ echo "----------------------------"
 sudo systemctl enable docker
 sudo systemctl enable sddm
 sudo systemctl enable ufw
-sudo systemctl enable pipewire.service pipewire-pulse.service
+# sudo systemctl enable pipewire.service pipewire-pulse.service
 echo "Done"
 
-echo "----------------------------"
-echo "Post Audio Installation"
-echo "----------------------------"
-amixer sset Master unmute
-echo "Done"
+# echo "----------------------------"
+# echo "Post Audio Installation"
+# echo "----------------------------"
+# amixer sset Master unmute
+# echo "Done"
 
 # Docker post installation
 echo "----------------------------"

@@ -75,7 +75,9 @@ tooltip {
 #tray,
 #memory,
 #disk,
-#tray {
+#tray,
+#battery
+{
     background: #1e1e2e;
     opacity: 1.0;
     padding: 1.5px 7px 1.5px 7px;

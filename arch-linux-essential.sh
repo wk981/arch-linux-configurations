@@ -70,7 +70,7 @@ echo "----------------------------"
 echo "Post Pacman Installation, copying .configs over"
 echo "----------------------------"
 mkdir -p ~/.config
-cp -r ./configs/* ~/.config/
+cp -r ./config/* ~/.config/
 echo "Done"
 
 # Ohmybash
